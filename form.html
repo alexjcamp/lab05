@@ -2,7 +2,7 @@
 <html lang = "en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="docStyle.css" />
+		<link rel="stylesheet" href="form.css" />
 		<title>Zalupa</title>
 	</head>
 	<body>
@@ -42,37 +42,75 @@
 			<label>
 				<input type = "radio" name = "pass" id = "derp" value = "failed">No<br>
 			</label><br>
-			<label><div class = "formTitle">Earliest Start Date?</div>
-				<input type ="text" name = "month" id = "month">
-			</label>
-			/<input type ="text" name = "day" id = "day">
-			/<input type ="text" name = "year" id = "year"><br>
-			<label for = "month" class = "under">MM&emsp;</label>
-			<label for = "day" class = "under">DD&emsp;</label>
-			<label for = "year" class = "under">YYYY</label><br><br>
+			<table>
+				<tr>
+					<label for = "month"><div class = "formTitle">Earliest Start Date?</div></label>
+				</tr>
+				<tr>								
+					<td>
+						<input type ="text" name = "month" id = "month" maxlength = "2" style ="width:20px"><br>
+						<label for = "month" class = "under">MM</label>
+					</td>
+					<td>/<br>&nbsp;</td>
+					<td>
+						<input type ="text" name = "day" id = "day" maxlength = "2" style ="width:20px"><br>
+						<label for = "day" class = "under">DD</label>
+					</td>
+					<td>/<br>&nbsp;</td>
+					<td>
+						<input type ="text" name = "year" id = "year" maxlength ="4" style = "width:40px"><br>			
+						<label for = "year" class = "under">YYYY</label>
+					</td>
+				</tr>
+			</table>
+			<br>
 			<label><div class = "formTitle">Portfolio URL</div>
 				<input type = "url" name = "portfolio" id = "portfolio">
 			</label><br><br>
 			<label><div class = "formTitle">Attach resume</div>
 				<input type = "file" name = "resume" id = "url">
 			</label><br><br>
-			<label><div class = "formTitle">Name</div>
-				<input type = "text" name = "first" id = "first">
-				<input type = "text" name = "last" id = "last">
-			</label><br>
-			<label for = "first" class = "under">First&emsp;</label>
-			<label for = "last" class = "under">Last&emsp;</label><br><br>
-			<label><div class = "formTitle">Email Adress</div>
+			<table>
+				<tr>
+					<label for = "first"><div class = "formTitle">Name</div></label>
+				</tr>
+				<tr>								
+					<td>
+						<input type = "text" name = "first" id = "first"><br>
+						<label for = "first" class = "under">First</label>
+					</td>
+					<td>
+						<input type = "text" name = "last" id = "last"><br>
+						<label for = "last" class = "under">Last</label>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<label><div class = "formTitle">Email Address</div>
 				<input type = "email" name = "email" id = "email">
 			</label><br><br>
-			<label><div class = "formTitle">Phone Number</div>
-				<input type ="text" name = "phone1" id = "phone1">
-			</label>
-			-<input type ="text" name = "phone2" id = "phone2">
-			-<input type ="text" name = "phone3" id = "phone3"><br>
-			<label for = "phone1" class = "under">(***)&emsp;</label>
-			<label for = "phone2" class = "under">***&emsp;</label>
-			<label for = "phone3" class = "under">****</label><br><br>
+			<table>
+				<tr>
+					<label for "phone1"><div class = "formTitle">Phone Number</div></label>
+				</tr>
+				<tr>								
+					<td>
+						<input type ="text" name = "phone1" id = "phone1"><br>
+						<label for = "phone1" class = "under">(***)&emsp;</label>
+					</td>
+					<td>-<br>&nbsp;</td>
+					<td>
+						<input type ="text" name = "phone2" id = "phone2"><br>
+						<label for = "phone2" class = "under">***&emsp;</label>
+					</td>
+					<td>-<br>&nbsp;</td>
+					<td>
+						<input type ="text" name = "phone3" id = "phone3"><br>			
+						<label for = "phone3" class = "under">****</label>
+					</td>
+				</tr>
+			</table>
+			<br>
 			<label><div class = "spTitle">Any additional information for us</div>
 			<textarea name = "addInfo" id = "addInfo" cols = "50" rows = "5"></textarea></label><br>
 			<input type = "submit" name = "submit" value = "submit">
